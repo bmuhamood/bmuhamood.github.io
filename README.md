@@ -4,7 +4,7 @@
 
 > This project is a static admin dashboard.
 
-![screenshot](./images/example.png)
+![screenshot](./images/Capture.JPG)
 
 Responsive static admin dashboard can be integrated to any backend.
 
