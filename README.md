@@ -1,42 +1,42 @@
-# Bootstrap-Admin-Dashboard
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-The theme include a fully compiled  Bootstrap, HTML and CSS based file structure, with minimal included JS. 
+# Admin Dashboard
 
-Its UI is simple, customizable. It can be integrated with any backend. 
+> This project is a static admin dashboard.
 
-#Built With
+![screenshot](./images/example.png)
 
-HTML
+Responsive static admin dashboard can be integrated to any backend.
 
-CSS
+## Built With
 
-Bootstrap
+- HTML
+- CSS
+- Bootstrap
+- Javascript
 
-Live Demo Link - https://bmuhamood.github.io/Bootsrap-Admin-Dashboard/.
+## Live Demo
 
-#Authors
+[Live Demo Link](https://bmuhamood.github.io/bmuhmood.github.io/)
 
-👤 Bbosa Muhamood
+## Authors
 
-Github: @bmuhamood
+👤 **Bbosa Muhamood**
 
-Twitter: @croixtechfirm
+- Github: [@bmuhamood](https://github.com/bmuhamood)
+- Twitter: [@croixtechfirm](https://twitter.com/croixtechfirm)
+- Linkedin: [linkedin](https://www.linkedin.com/in/bbosa-muhamood-06845576/)
 
-Linkedin: linkedin
-
-#🤝 Contributing
+## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the issues page.
+Feel free to check the [issues page](https://github.com/bmuhamood/mint-project/issues).
 
-#Show your support
+## Show your support
 
 Give a ⭐️ if you like this project!
 
-#📝 License
+## 📝 License
 
-This project is MIT licensed.
-
-
-
+This project is [MIT](lic.url) licensed.
