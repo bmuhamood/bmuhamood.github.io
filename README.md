@@ -31,7 +31,7 @@ Responsive static admin dashboard can be integrated to any backend.
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/bmuhamood/mint-project/issues).
+Feel free to check the [issues page](https://github.com/bmuhamood/bmuhmood.github.io/issues).
 
 ## Show your support
 
