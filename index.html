@@ -267,7 +267,7 @@
                 <!-- end of Pagination -->
               </div>
               <div class="col-xl-6 col-12">
-                <h3 class="text-muted text-center md-3">EDCFTP2 IN/Out Directories</h3>
+                <h3 class="text-muted text-center md-3">EDCFTP2/4 IN/Out Directories</h3>
                 <table class="table table-dark  table-hover text-center">
                   <thead>
                     <tr class="text-muted">
@@ -366,71 +366,58 @@
                 </nav>
                 <!-- end of Pagination -->
               </div>
-              <div class="col-xl-6 col-12 mt-3">
-                <h3 class="text-muted text-center md-3">EDCFTP2 IN/Out Directories</h3>
+              <div class="col-xl-12 col-12 mt-3">
+                <h3 class="text-muted text-center md-3">DATABASE ALERTS</h3>
                 <table class="table table-dark  table-hover text-center">
                   <thead>
                     <tr class="text-muted">
                       <th>#</th>
-                      <th>Client</th>
-                      <th>Today</th>
-                      <th>Old</th>
+                      <th>Subject</th>
+                      <th>Body</th>
+                      <th>Node(1/2)</th>
                       <th>Status</th>
-                      <th>In/Out</th>
-                      <th>Total</th>
+                      <th>View</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <th>1</th>
-                      <td>KWTMT</td>
-                      <td>3067</td>
-                      <td>140698</td>
+                      <td>Nrtrde Long running Jobs</td>
+                      <td>Cpf Generator Application running since 1 hours(s)</td>
+                      <td>Node 1</td>
                       <td><span class="badge badge-danger w-75 py-2">High</span>
                       </td>
-                      <td>OUT</td>
-                      <td>143764</td>
+                      <td><button type="button" class="btn btn-info btn-sm">View</button></td>
                     </tr>
-                    <tr>
-                      <th>2</th>
-                      <td>CIV02</td>
-                      <td>72</td>
-                      <td>0</td>
-                      <td><span class="badge badge-success w-75 py-2">Low</span>
-                      </td>
-                      <td>IN</td>
-                      <td>72</td>
-                    </tr>
-                    <tr>
-                      <th>3</th>
-                      <td>SAUZN</td>
-                      <td>35</td>
-                      <td>1</td>
-                      <td><span class="badge badge-success w-75 py-2">Low</span>
-                      </td>
-                      <td>IN</td>
-                      <td>36</td>
-                    </tr>
-                    <tr>
-                      <th>4</th>
-                      <td>IRQKK</td>
-                      <td>32</td>
-                      <td>0</td>
-                      <td><span class="badge badge-success w-75 py-2">Low</span>
-                      </td>
-                      <td>IN</td>
-                      <td>32</td>
-                    </tr>
-                    <tr>
-                      <th>5</th>
-                      <td>YEMYY</td>
-                      <td>5</td>
-                      <td>784</td>
-                      <td><span class="badge badge-danger w-75 py-2">High</span>
-                      </td>
-                      <td>OUT</td>
-                      <td>789</td>
-                    </tr>
+                    <th>2</th>
+                    <td>Nrtrde Long Jobs are not fired</td>
+                    <td>ASCII loading Application not fired since 2 hours(s)</td>
+                    <td>Node 1</td>
+                    <td><span class="badge badge-danger w-75 py-2">High</span>
+                    </td>
+                    <td><button type="button" class="btn btn-info btn-sm">View</button></td>
+                  </tr>
+                  <th>3</th>
+                  <td>Nrtrde Long running Jobs</td>
+                  <td>distribute NRTIN/ Files in N2 running since 43 minute(s)</td>
+                  <td>Node 2</td>
+                  <td><span class="badge badge-danger w-75 py-2">High</span>
+                  </td>
+                  <td><button type="button" class="btn btn-info btn-sm">View</button></td>
+                </tr>
+                <th>4</th>
+                <td>Nrtrde long running jobs and some Jobs didn't fire</td>
+                <td>
+                  <ol>
+                    <li>Cpf Generator Application running since 1 hours(s)</li>
+                    <li>NRT_CDR Garbage Collector not fired since 2 hours(s)</li>
+                  </ol>
+                </td>
+                <td>Node 1 & Node 2</td>
+                <td><span class="badge badge-danger w-75 py-2">High</span>
+                </td>
+                <td><button type="button" class="btn btn-info btn-sm">View</button></td>
+              </tr>
 
                   </tbody>
                 </table>
@@ -466,72 +453,155 @@
                 </nav>
                 <!-- end of Pagination -->
               </div>
-              <div class="col-xl-6 col-12 mt-3">
-                <h3 class="text-muted text-center md-3">EDCFTP2 IN/Out Directories</h3>
+              <div class="col-xl-4 col-12 mt-3">
+                <h3 class="text-muted text-center md-3">NRTRDE Delays</h3>
                 <table class="table table-dark  table-hover text-center">
                   <thead>
                     <tr class="text-muted">
                       <th>#</th>
                       <th>Client</th>
-                      <th>Today</th>
-                      <th>Old</th>
-                      <th>Status</th>
-                      <th>In/Out</th>
-                      <th>Total</th>
+                      <th>Duration</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>1</th>
+                      <td>GMB01</td>
+                      <td>14/04/2021 07:37:32</td>
+                    </tr>
+                    <tr>
+                      <th>2</th>
+                      <td>BDITL</td>
+                      <td>14/04/2021 07:37:32</td>
+                    </tr>
+                    <tr>
+                      <th>3</th>
+                      <td>COMHR</td>
+                      <td>14/04/2021 07:37:32</td>
+                    </tr>
+ 
+                  </tbody>
+                </table>
+                <!-- Pagination -->
+                <nav>
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                      <span>Previous</span>
+                      </a>
+                    </li>
+                    <li class="page-item active">
+                      <a href="#" class="page-link py-2 px-3">
+                      1
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                      2
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                      3
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                      <span>Next</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <!-- end of Pagination -->
+              </div>
+              <div class="col-xl-4 col-12 mt-3">
+                <h3 class="text-muted text-center md-3">CDR/CPF Delays</h3>
+                <table class="table table-dark  table-hover text-center">
+                  <thead>
+                    <tr class="text-muted">
+                      <th>#</th>
+                      <th>Client</th>
+                      <th>Duration</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>1</th>
+                      <td>GMB01</td>
+                      <td>5 Day(s)</td>
+                    </tr>
+                    <tr>
+                      <th>2</th>
+                      <td>CAFAT</td>
+                      <td>1 Day(s)</td>
+                    </tr>
+                    <tr>
+                      <th>3</th>
+                      <td>MRTMM</td>
+                      <td>3 Hour(s)</td>
+                    </tr>
+ 
+                  </tbody>
+                </table>
+                <!-- Pagination -->
+                <nav>
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                      <span>Previous</span>
+                      </a>
+                    </li>
+                    <li class="page-item active">
+                      <a href="#" class="page-link py-2 px-3">
+                      1
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                      2
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                      3
+                      </a>
+                    </li>
+                    <li class="page-item">
+                      <a href="#" class="page-link py-2 px-3">
+                      <span>Next</span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <!-- end of Pagination -->
+              </div>
+              <div class="col-xl-4 col-12 mt-3">
+                <h3 class="text-muted text-center md-3">FTP Down</h3>
+                <table class="table table-dark  table-hover text-center">
+                  <thead>
+                    <tr class="text-muted">
+                      <th>#</th>
+                      <th>Client</th>
+                      <th>Date</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <th>1</th>
                       <td>KWTMT</td>
-                      <td>3067</td>
-                      <td>140698</td>
-                      <td><span class="badge badge-danger w-75 py-2">High</span>
-                      </td>
-                      <td>OUT</td>
-                      <td>143764</td>
+                      <td>18/04/21 23:51:04</td>
                     </tr>
                     <tr>
                       <th>2</th>
-                      <td>CIV02</td>
-                      <td>72</td>
-                      <td>0</td>
-                      <td><span class="badge badge-success w-75 py-2">Low</span>
-                      </td>
-                      <td>IN</td>
-                      <td>72</td>
+                      <td>CHNAR</td>
+                      <td>17/04/21 20:55:06</td>
                     </tr>
                     <tr>
                       <th>3</th>
-                      <td>SAUZN</td>
-                      <td>35</td>
-                      <td>1</td>
-                      <td><span class="badge badge-success w-75 py-2">Low</span>
-                      </td>
-                      <td>IN</td>
-                      <td>36</td>
+                      <td>SSDZS</td>
+                      <td>17/04/21 19:50:02</td>
                     </tr>
-                    <tr>
-                      <th>4</th>
-                      <td>IRQKK</td>
-                      <td>32</td>
-                      <td>0</td>
-                      <td><span class="badge badge-success w-75 py-2">Low</span>
-                      </td>
-                      <td>IN</td>
-                      <td>32</td>
-                    </tr>
-                    <tr>
-                      <th>5</th>
-                      <td>YEMYY</td>
-                      <td>5</td>
-                      <td>784</td>
-                      <td><span class="badge badge-danger w-75 py-2">High</span>
-                      </td>
-                      <td>OUT</td>
-                      <td>789</td>
-                    </tr>
-
+ 
                   </tbody>
                 </table>
                 <!-- Pagination -->
