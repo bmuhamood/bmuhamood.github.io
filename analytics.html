@@ -10,8 +10,9 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="/css/style.css">
-    <title>Admin Dashboard</title>
+    <title>Analytics</title>
   </head>
   <body>
     <!-- navbar -->
@@ -30,11 +31,11 @@
                 <a href="a" class="text-white p-3 mb-2">UserName</a>
               </div>
               <ul class="navbar-nav flex-column mt-4">
-                <li class="nav-item"><a href="a" class="nav-link text-white p-3 mb-2 current"><i class="fas fa-home text-light fa-lg mr-3"></i>Dashboard</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link text-white p-3 mb-2 current"><i class="fas fa-home text-light fa-lg mr-3"></i>Dashboard</a></li>
                 <li class="nav-item"><a href="a" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-user text-light fa-lg mr-3"></i>Profile</a></li>
                 <li class="nav-item"><a href="a" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-envelope text-light fa-lg mr-3"></i>Inbox</a></li>
                 <li class="nav-item"><a href="a" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-shopping-cart text-light fa-lg mr-3"></i>Sales</a></li>
-                <li class="nav-item"><a href="analytics.html" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-chart-line text-light fa-lg mr-3"></i>Analytics</a></li>
+                <li class="nav-item"><a href="analytics.html" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-chart-line text-light fa-lg mr-3"></i>Analytic</a></li>
                 <li class="nav-item"><a href="a" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-chart-bar text-light fa-lg mr-3"></i>Charts</a></li>
                 <li class="nav-item"><a href="a" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-table text-light fa-lg mr-3"></i>Tables</a></li>
                 <li class="nav-item"><a href="a" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-cog text-light fa-lg mr-3"></i>Settings</a></li>
@@ -167,474 +168,38 @@
       </div>
     </section>
     <!-- end of Cards -->
-    <!-- Tables -->
+    <!-- Charts and Graphs -->
     <section>
       <div class="container-fluid">
         <div class="row mb-5">
           <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
             <div class="row align-items-center">
-              <div class="col-xl-6 col-12 mb-4 mb-xl-0">
-                <h3 class="text-muted text-center md-3">EDCFTP4/2 Files Pending In/Out</h3>
-                <table class="table table-striped bg-light text-center">
-                  <thead>
-                    <tr class="text-muted">
-                      <th>#</th>
-                      <th>Client</th>
-                      <th>Today</th>
-                      <th>Old</th>
-                      <th>In/Out</th>
-                      <th>View</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>1</th>
-                      <td>CHECF</td>
-                      <td>2</td>
-                      <td>0</td>
-                      <td><span class="badge badge-success w-75 py-2">IN</span>
-                      </td>
-                      <td><button type="button" class="btn btn-info btn-sm">View</button></td>
-                    </tr>
-                    <tr>
-                      <th>2</th>
-                      <td>CHNCT</td>
-                      <td>1</td>
-                      <td>0</td>
-                      <td><span class="badge badge-danger w-75 py-2">OUT</span>
-                      </td>
-                      <td><button type="button" class="btn btn-info btn-sm">View</button></td>
-                    </tr>
-                    <tr>
-                      <th>3</th>
-                      <td>SUDMO</td>
-                      <td>0</td>
-                      <td>53</td>
-                      <td><span class="badge badge-danger w-75 py-2">OUT</span>
-                      </td>
-                      <td><button type="button" class="btn btn-info btn-sm">View</button></td>
-                    </tr>
-                    <tr>
-                      <th>4</th>
-                      <td>SENEX</td>
-                      <td>0</td>
-                      <td>2</td>
-                      <td><span class="badge badge-success w-75 py-2">IN</span>
-                      </td>
-                      <td><button type="button" class="btn btn-info btn-sm">View</button></td>
-                    </tr>
-                    <tr>
-                      <th>5</th>
-                      <td>NGAEM</td>
-                      <td>2</td>
-                      <td>0</td>
-                      <td><span class="badge badge-success w-75 py-2">IN</span>
-                      </td>
-                      <td><button type="button" class="btn btn-info btn-sm">View</button></td>
-                    </tr>
-                  </tbody>
-                </table>
-                <!-- Pagination -->
-                <nav>
-                  <ul class="pagination justify-content-center">
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      <span>&laquo;</span>
-                      </a>
-                    </li>
-                    <li class="page-item active">
-                      <a href="#" class="page-link py-2 px-3">
-                      1
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      2
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      3
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      <span>&raquo;</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-                <!-- end of Pagination -->
+                
+              <div class="col-xl-4 col-12 mb-4 mb-xl-0">
+                <h3 class="text-muted text-center md-3">Tickets Response Rate</h3>
+                <canvas id="myChart"></canvas>
               </div>
-              <div class="col-xl-6 col-12">
-                <h3 class="text-muted text-center md-3">EDCFTP2/4 IN/Out Directories</h3>
-                <table class="table table-dark  table-hover text-center">
-                  <thead>
-                    <tr class="text-muted">
-                      <th>#</th>
-                      <th>Client</th>
-                      <th>Today</th>
-                      <th>Old</th>
-                      <th>Status</th>
-                      <th>In/Out</th>
-                      <th>Total</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>1</th>
-                      <td>KWTMT</td>
-                      <td>3067</td>
-                      <td>140698</td>
-                      <td><span class="badge badge-danger w-75 py-2">High</span>
-                      </td>
-                      <td>OUT</td>
-                      <td>143764</td>
-                    </tr>
-                    <tr>
-                      <th>2</th>
-                      <td>CIV02</td>
-                      <td>72</td>
-                      <td>0</td>
-                      <td><span class="badge badge-success w-75 py-2">Low</span>
-                      </td>
-                      <td>IN</td>
-                      <td>72</td>
-                    </tr>
-                    <tr>
-                      <th>3</th>
-                      <td>SAUZN</td>
-                      <td>35</td>
-                      <td>1</td>
-                      <td><span class="badge badge-success w-75 py-2">Low</span>
-                      </td>
-                      <td>IN</td>
-                      <td>36</td>
-                    </tr>
-                    <tr>
-                      <th>4</th>
-                      <td>IRQKK</td>
-                      <td>32</td>
-                      <td>0</td>
-                      <td><span class="badge badge-success w-75 py-2">Low</span>
-                      </td>
-                      <td>IN</td>
-                      <td>32</td>
-                    </tr>
-                    <tr>
-                      <th>5</th>
-                      <td>YEMYY</td>
-                      <td>5</td>
-                      <td>784</td>
-                      <td><span class="badge badge-danger w-75 py-2">High</span>
-                      </td>
-                      <td>OUT</td>
-                      <td>789</td>
-                    </tr>
+              <div class="col-xl-8 col-12">
+                <h3 class="text-muted text-center md-3">EDCFTP2/4 IN/OUT Directories</h3>
+                <canvas id="myChart3"></canvas>
+              </div>
 
-                  </tbody>
-                </table>
-                <!-- Pagination -->
-                <nav>
-                  <ul class="pagination justify-content-center">
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      <span>Previous</span>
-                      </a>
-                    </li>
-                    <li class="page-item active">
-                      <a href="#" class="page-link py-2 px-3">
-                      1
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      2
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      3
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      <span>Next</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-                <!-- end of Pagination -->
-              </div>
               <div class="col-xl-12 col-12 mt-3">
-                <h3 class="text-muted text-center md-3">DATABASE ALERTS</h3>
-                <table class="table table-dark  table-hover text-center">
-                  <thead>
-                    <tr class="text-muted">
-                      <th>#</th>
-                      <th>Subject</th>
-                      <th>Body</th>
-                      <th>Node(1/2)</th>
-                      <th>Status</th>
-                      <th>View</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>1</th>
-                      <td>Nrtrde Long running Jobs</td>
-                      <td>Cpf Generator Application running since 1 hours(s)</td>
-                      <td>Node 1</td>
-                      <td><span class="badge badge-danger w-75 py-2">High</span>
-                      </td>
-                      <td><button type="button" class="btn btn-info btn-sm">View</button></td>
-                    </tr>
-                    <th>2</th>
-                    <td>Nrtrde Long Jobs are not fired</td>
-                    <td>ASCII loading Application not fired since 2 hours(s)</td>
-                    <td>Node 1</td>
-                    <td><span class="badge badge-danger w-75 py-2">High</span>
-                    </td>
-                    <td><button type="button" class="btn btn-info btn-sm">View</button></td>
-                  </tr>
-                  <th>3</th>
-                  <td>Nrtrde Long running Jobs</td>
-                  <td>distribute NRTIN/ Files in N2 running since 43 minute(s)</td>
-                  <td>Node 2</td>
-                  <td><span class="badge badge-danger w-75 py-2">High</span>
-                  </td>
-                  <td><button type="button" class="btn btn-info btn-sm">View</button></td>
-                </tr>
-                <th>4</th>
-                <td>Nrtrde long running jobs and some Jobs didn't fire</td>
-                <td>
-                  <ol>
-                    <li>Cpf Generator Application running since 1 hours(s)</li>
-                    <li>NRT_CDR Garbage Collector not fired since 2 hours(s)</li>
-                  </ol>
-                </td>
-                <td>Node 1 & Node 2</td>
-                <td><span class="badge badge-danger w-75 py-2">High</span>
-                </td>
-                <td><button type="button" class="btn btn-info btn-sm">View</button></td>
-              </tr>
-
-                  </tbody>
-                </table>
-                <!-- Pagination -->
-                <nav>
-                  <ul class="pagination justify-content-center">
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      <span>Previous</span>
-                      </a>
-                    </li>
-                    <li class="page-item active">
-                      <a href="#" class="page-link py-2 px-3">
-                      1
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      2
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      3
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      <span>Next</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-                <!-- end of Pagination -->
+                <h3 class="text-muted text-center md-3"></h3>
+                <h3 class="text-muted text-center md-3">Number of Clients Requests</h3>
+                <canvas id="myChart2" height="110"></canvas>
               </div>
               <div class="col-xl-4 col-12 mt-3">
                 <h3 class="text-muted text-center md-3">NRTRDE Delays</h3>
-                <table class="table table-dark  table-hover text-center">
-                  <thead>
-                    <tr class="text-muted">
-                      <th>#</th>
-                      <th>Client</th>
-                      <th>Duration</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>1</th>
-                      <td>GMB01</td>
-                      <td>14/04/2021 07:37:32</td>
-                    </tr>
-                    <tr>
-                      <th>2</th>
-                      <td>BDITL</td>
-                      <td>14/04/2021 07:37:32</td>
-                    </tr>
-                    <tr>
-                      <th>3</th>
-                      <td>COMHR</td>
-                      <td>14/04/2021 07:37:32</td>
-                    </tr>
- 
-                  </tbody>
-                </table>
-                <!-- Pagination -->
-                <nav>
-                  <ul class="pagination justify-content-center">
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      <span>Previous</span>
-                      </a>
-                    </li>
-                    <li class="page-item active">
-                      <a href="#" class="page-link py-2 px-3">
-                      1
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      2
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      3
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      <span>Next</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-                <!-- end of Pagination -->
+                <canvas id="myChart4" height="200"></canvas>
               </div>
               <div class="col-xl-4 col-12 mt-3">
                 <h3 class="text-muted text-center md-3">CDR/CPF Delays</h3>
-                <table class="table table-dark  table-hover text-center">
-                  <thead>
-                    <tr class="text-muted">
-                      <th>#</th>
-                      <th>Client</th>
-                      <th>Duration</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>1</th>
-                      <td>GMB01</td>
-                      <td>5 Day(s)</td>
-                    </tr>
-                    <tr>
-                      <th>2</th>
-                      <td>CAFAT</td>
-                      <td>1 Day(s)</td>
-                    </tr>
-                    <tr>
-                      <th>3</th>
-                      <td>MRTMM</td>
-                      <td>3 Hour(s)</td>
-                    </tr>
- 
-                  </tbody>
-                </table>
-                <!-- Pagination -->
-                <nav>
-                  <ul class="pagination justify-content-center">
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      <span>Previous</span>
-                      </a>
-                    </li>
-                    <li class="page-item active">
-                      <a href="#" class="page-link py-2 px-3">
-                      1
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      2
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      3
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      <span>Next</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-                <!-- end of Pagination -->
+                <canvas id="myChart6"></canvas>
               </div>
               <div class="col-xl-4 col-12 mt-3">
                 <h3 class="text-muted text-center md-3">FTP Down</h3>
-                <table class="table table-dark  table-hover text-center">
-                  <thead>
-                    <tr class="text-muted">
-                      <th>#</th>
-                      <th>Client</th>
-                      <th>Date</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>1</th>
-                      <td>KWTMT</td>
-                      <td>18/04/21 23:51:04</td>
-                    </tr>
-                    <tr>
-                      <th>2</th>
-                      <td>CHNAR</td>
-                      <td>17/04/21 20:55:06</td>
-                    </tr>
-                    <tr>
-                      <th>3</th>
-                      <td>SSDZS</td>
-                      <td>17/04/21 19:50:02</td>
-                    </tr>
- 
-                  </tbody>
-                </table>
-                <!-- Pagination -->
-                <nav>
-                  <ul class="pagination justify-content-center">
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      <span>Previous</span>
-                      </a>
-                    </li>
-                    <li class="page-item active">
-                      <a href="#" class="page-link py-2 px-3">
-                      1
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      2
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      3
-                      </a>
-                    </li>
-                    <li class="page-item">
-                      <a href="#" class="page-link py-2 px-3">
-                      <span>Next</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
-                <!-- end of Pagination -->
+                <canvas id="myChart5"></canvas>
               </div>
             </div>
           </div>
@@ -937,5 +502,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="/js/script.js"></script>
+    <script src="/js/graphs.js"></script>
   </body>
 </html>
