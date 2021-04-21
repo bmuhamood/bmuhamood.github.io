@@ -171,3 +171,29 @@ var chart5 = new Chart(myChart6, {
     }
   }
 });
+
+// Radar Graph
+let labels7 = ['ARETC', 'CIV02', 'SAUZN', 'IRQKK', 'YEMYY', 'KWTMT', 'CAFAT', 'LBY01', 'BEN02', 'SYRSP'];
+let data7 = [100, 79, 35, 50, 74, 10, 30, 60, 40, 90];
+let colors7 = ['#49A9EA', '#36CAAB', '#140698', '#0e0e0e', '#ff00ff', '#000061', '#002400', '#ffff1f', '#00FFFF'];
+let myChart7 = document.getElementById("myChart7").getContext('2d');
+
+let chart7 = new Chart(myChart7, {
+  type: 'radar',
+  data: {
+    labels: labels7,
+    datasets: [{
+      data: data7,
+      backgroundColor: colors7,
+    }]
+  },
+  options: {
+    title: {
+      text: "Number of clients Requests",
+      display: true
+    },
+    legend: {
+        display: false
+    }
+  }
+});
