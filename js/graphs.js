@@ -90,7 +90,7 @@ var myChart4 = new Chart(ctx, {
     data: {
         labels: ['CIV02', 'MRTMM', 'BEN02', 'ARETC', 'CAFAT', 'GMB01'],
         datasets: [{
-            label: 'Realtime Files Delays',
+            label: ' Files Delays',
             data: [12, 19, 3, 5, 2, 3],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -173,27 +173,98 @@ var chart5 = new Chart(myChart6, {
 });
 
 // Radar Graph
-let labels7 = ['ARETC', 'CIV02', 'SAUZN', 'IRQKK', 'YEMYY', 'KWTMT', 'CAFAT', 'LBY01', 'BEN02', 'SYRSP'];
-let data7 = [100, 79, 35, 50, 74, 10, 30, 60, 40, 90];
-let colors7 = ['#49A9EA', '#36CAAB', '#140698', '#0e0e0e', '#ff00ff', '#000061', '#002400', '#ffff1f', '#00FFFF'];
-let myChart7 = document.getElementById("myChart7").getContext('2d');
+var labels7 = ['ARETC', 'CIV02', 'SAUZN', 'IRQKK', 'YEMYY'];
+var myChart7 = document.getElementById("myChart7").getContext('2d');
 
-let chart7 = new Chart(myChart7, {
+var chart7 = new Chart(myChart7, {
   type: 'radar',
   data: {
     labels: labels7,
-    datasets: [{
-      data: data7,
-      backgroundColor: colors7,
-    }]
+    datasets: [
+      {
+      label: 'NRT HUR(S)',
+      fill: true,
+      backgroundColor: "rgba(179, 181, 198, 0.2)",
+      borderColor: "rgba(179, 181, 198, 1)",
+      pointBorderColor: "#fff",
+      pointBackgroundColor: "rgba(179, 181, 198, 1)",
+      data: [10, 12, 55, 7, 29 ]
+      }, 
+      {
+        label: 'CDR HUR',
+        fill: true,
+        backgroundColor: "rgba(255, 99, 132, 0.2)",
+        borderColor: "rgba(255, 99, 132, 1)",
+        pointBorderColor: "#fff",
+        pointBackgroundColor: "rgba(255, 99, 132, 1)",
+        data: [51, 10, 32, 20, 44 ]
+        }, 
+        {
+          label: 'Consolidated HUR(s)',
+          fill: true,
+          backgroundColor: "rgba(106, 90, 205, 0.1)",
+          borderColor: "rgba(106, 90, 205, 1)",
+          pointBorderColor: "#fff",
+          pointBackgroundColor: "rgba(106, 90, 205, 1)",
+          data: [51, 10, 32, 20, 44 ]
+          }
+    ]
   },
   options: {
     title: {
-      text: "Number of clients Requests",
+      text: "Clients Who have not received HUR(s)",
       display: true
-    },
-    legend: {
-        display: false
     }
   }
 });
+
+// line graph
+var ctx1 = document.getElementById('myChart8');
+var myChart8 = new Chart(ctx1, {
+    type: 'line',
+    data: {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+        datasets: [{
+            label: 'HURs Not Generated for Clients',
+            data: [45, 1, 10, 15, 25, 35],
+            fill: true,
+            pointStyle: "cross",
+            backgroundColor: "rgb(34,139,34)",
+            borderColor: "rgb(34,139,34)",
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+// line graph
+var ctx1 = document.getElementById('myChart9');
+var myChart9 = new Chart(ctx1, {
+    type: 'line',
+    data: {
+        labels: ["SAUET", "SAUZN", "ARETC", "IRQAT", "IRQKK", "IRNTT"],
+        datasets: [{
+            label: 'Generated for Clients',
+            data: [45, 13, 10, 8, 25, 35],
+            fill: false,
+            pointStyle: "cross",
+            backgroundColor: "rgb(34,139,34)",
+            borderColor: "rgb(34,139,34)",
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
