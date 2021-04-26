@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Bootstrap cdn-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="title icon" href="images/img.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <button class="navbar-toggler ml-auto md-2 bg-light" type="button" data-toggle="collapse" data-target="#myNavbar">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- sidebar -->
+            <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
+              <a href="a" class="navbar-brand text-white d-block mx-auto text-center py-3 mb-4 bottom-border">Admin Dashboard</a>
+              <div class="bottom-border pb-3">
+                <img src="images/bg1.jpg" width="50" class="rounded-circle">
+                <a href="a" class="text-white p-3 mb-2">UserName</a>
+              </div>
+              <ul class="navbar-nav flex-column mt-4">
+                <li class="nav-item"><a href="a" class="nav-link text-white p-3 mb-2 current"><i class="fas fa-home text-light fa-lg mr-3"></i>Dashboard</a></li>
+                <li class="nav-item"><a href="a" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-user text-light fa-lg mr-3"></i>Profile</a></li>
+                <li class="nav-item"><a href="a" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-envelope text-light fa-lg mr-3"></i>Inbox</a></li>
+                <li class="nav-item"><a href="task.html" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-shopping-cart text-light fa-lg mr-3"></i>Task</a></li>
+                <li class="nav-item"><a href="analytics.html" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-chart-line text-light fa-lg mr-3"></i>Analytics</a></li>
+                <li class="nav-item"><a href="a" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-chart-bar text-light fa-lg mr-3"></i>Charts</a></li>
+                <li class="nav-item"><a href="a" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-table text-light fa-lg mr-3"></i>Tables</a></li>
+                <li class="nav-item"><a href="a" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-cog text-light fa-lg mr-3"></i>Settings</a></li>
+                <li class="nav-item"><a href="a" class="nav-link text-white p-3 mb-2 sidebar-link"><i class="fas fa-file-alt text-light fa-lg mr-3"></i>Documentation</a></li>
+              </ul>
+            </div>
+            <!--end of sidebar -->
+            <!--top-nav-bar -->
+            <div class="col-xl-10 col-lg-9 col-md-8 ml-auto bg-dark fixed-top py-2 top-navbar">
+              <div class="row align-items-center">
+                <div class="col-md-4">
+                  <h4 class="text-light text-uppercase">Dashboard</h4>
+                </div>
+                <div class="col-md-5">
+                  <form>
+                    <div class="input-group">
+                      <input type="text" class="form-control search-input" placeholder="Search.........">
+                      <button type="button" class="btn btn-white search-button"><i class="fas fa-search text-danger"></i></button>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-3">
+                  <ul class="navbar-nav">
+                    <a href=""><i class="fas fa-bell fa-lg text-muted mt-2"></i>
+                        <span class="badge rounded-pill badge-notification bg-danger text-white">9</span>
+                      </a>
+                    <a href=""><i class="fas fa-envelope fa-lg text-muted mt-2 ml-2"></i>
+                        <span class="badge rounded-pill badge-notification bg-danger text-white">999+</span>
+                      </a>
+                    <li class="nav-item ml-md-auto"><a href="#" class="nav-link" data-toggle="modal" data-target="#sign-out"><i class="fas fa-sign-out-alt text-danger fa-lg"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- modals -->
+    <div class="modal fade" id="sign-out">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Want to leave?</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            Press logout to leave
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Stay here</button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Logout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of modals -->
+    <!-- Cards -->
+    <section>
+      <div class="container-fluid mt-5 mb-3 flo">
+      <div class="row">
+      <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+        <div class="mt-2">
+            <nav class="navbar navbar-light bg-light justify-content-end">
+                <form class="form-inline">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-danger my-2 my-sm-0" type="Search..........">Search</button>
+                  <button class="btn btn-danger my-2 my-sm-0 ml-2" type="button">Calender</button>
+                  <div class="dropdown show ml-2">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Filter by 
+                    </a>
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another</a>
+                      <a class="dropdown-item" href="#">Something else</a>
+                    </div>
+                  </div>
+                </form>
+              </nav>
+        </div>
+        <div class="row pt-md-5 mt-md-3 mb-3">
+            
+                <div class="col-sm-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <p>Due Date: <span class="text-muted">25-April-2021</span></p>
+                      <div class="progress mb-4" style="height: 10px">
+                        <div class="progress-bar progress-bar-striped font-weight-bold bg-danger" style="width:82%">
+                          82%
+                        </div>
+                      </div>
+                      <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Special title treatment</h5>
+                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                      <p>Due Date: <span class="text-muted">25-April-2021</span></p>
+                      <div class="progress mb-4" style="height: 10px">
+                        <div class="progress-bar progress-bar-striped font-weight-bold bg-success" style="width:82%">
+                          82%
+                        </div>
+                      </div>
+                      <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p>Due Date: <span class="text-muted">25-April-2021</span></p>
+                        <div class="progress mb-4" style="height: 10px">
+                            <div class="progress-bar progress-bar-striped font-weight-bold bg-info" style="width:82%">
+                              82%
+                            </div>
+                          </div>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 mt-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p>Due Date: <span class="text-muted">25-April-2021</span></p>
+                        <div class="progress mb-4" style="height: 10px">
+                            <div class="progress-bar progress-bar-striped font-weight-bold bg-warning" style="width:82%">
+                              82%
+                            </div>
+                          </div>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 mt-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p>Due Date: <span class="text-muted">25-April-2021</span></p>
+                        <div class="progress mb-4" style="height: 10px">
+                            <div class="progress-bar progress-bar-striped font-weight-bold bg-danger" style="width:82%">
+                              82%
+                            </div>
+                          </div>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-4 mt-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <p>Due Date: <span class="text-muted">25-April-2021</span></p>
+                        <div class="progress mb-4" style="height: 10px">
+                            <div class="progress-bar progress-bar-striped font-weight-bold bg-success" style="width:82%">
+                              82%
+                            </div>
+                          </div>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of Cards -->
+    <!-- Tables -->
+    <section>
+      <div class="container-fluid">
+        <div class="row mb-5">
+          <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+            <div class="row align-items-center">
+              <div class="col-xl-12 col-12 mb-4 mb-xl-0">
+                <h3 class="text-muted text-center md-3 mb-0">Suspected Fraud Investigations</h3>
+                <table class="table table-hover text-nowrap">
+                  <thead>
+                          <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Detail Views</th>
+                            <th scope="col">Unique Purchases</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Product Revenue</th>
+                            <th scope="col">Avg. Price</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Value</th>
+                            <td>18,492</td>
+                            <td>228</td>
+                            <td>350</td>
+                            <td>$4,787.64</td>
+                            <td>$13.68</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Percentage change</th>
+                            <td>
+                              <span class="text-danger">
+                                <i class="fas fa-caret-down me-1"></i><span>-48.8%%</span>
+                              </span>
+                            </td>
+                            <td>
+                              <span class="text-success">
+                                <i class="fas fa-caret-up me-1"></i><span>14.0%</span>
+                              </span>
+                            </td>
+                            <td>
+                              <span class="text-success">
+                                <i class="fas fa-caret-up me-1"></i><span>46.4%</span>
+                              </span>
+                            </td>
+                            <td>
+                              <span class="text-success">
+                                <i class="fas fa-caret-up me-1"></i><span>29.6%</span>
+                              </span>
+                            </td>
+                            <td>
+                              <span class="text-danger">
+                                <i class="fas fa-caret-down me-1"></i><span>-11.5%</span>
+                              </span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Absolute change</th>
+                            <td>
+                              <span class="text-danger">
+                                <i class="fas fa-caret-down me-1"></i><span>-17,654</span>
+                              </span>
+                            </td>
+                            <td>
+                              <span class="text-success">
+                                <i class="fas fa-caret-up me-1"></i><span>28</span>
+                              </span>
+                            </td>
+                            <td>
+                              <span class="text-success">
+                                <i class="fas fa-caret-up me-1"></i><span>111</span>
+                              </span>
+                            </td>
+                            <td>
+                              <span class="text-success">
+                                <i class="fas fa-caret-up me-1"></i><span>$1,092.72</span>
+                              </span>
+                            </td>
+                            <td>
+                              <span class="text-danger">
+                                <i class="fas fa-caret-down me-1"></i><span>$-1.78</span>
+                              </span>
+                            </td>
+                          </tr>
+                        </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- end of activities / Quick Post -->
+    <!-- footer -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
+            <div class="row border-top pt-3 bg-dark">
+              <div class="col-lg-6 text-center">
+                <ul class="list-inline">
+                  <li class="list-inline-item mr-2">
+                    <a href="https://github.com/bmuhamood" class="text-light">Github</a>
+                  </li>
+                  <li class="list-inline-item mr-2">
+                    <a href="https://www.linkedin.com/in/bbosa-muhamood-06845576/" class="text-light">Linkedin</a>
+                  </li>
+                  <li class="list-inline-item mr-2">
+                    <a href="https://twitter.com/croixtechfirm" class="text-light">Twitter</a>
+                  </li>
+                  <li class="list-inline-item mr-2">
+                    <a href="#" class="text-light">bbosa2009@gmail.com</a>
+                  </li>
+                  <li class="list-inline-item mr-2">
+                    <a href="#" class="text-light">Mobile/Watsapp: +971543790184</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6 text-center text-light">
+                <p>&copy; 2021 Copyright. Made With <i class="fas fa-heart text-danger"></i> by <span class="text-success">Bbosa Muhamood</span> </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
