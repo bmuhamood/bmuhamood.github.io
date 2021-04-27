@@ -1,4 +1,4 @@
-let labels1 = ['Resolved With In 24hrs', 'More than 24hrs'];
+let labels1 = ['Alerts Resolved With In 24hrs', 'More than 24hrs'];
 let data1 = [69, 31];
 let colors1 = ['#49A9EA', '#36CAAB'];
 let myChart1 = document.getElementById("myChart").getContext('2d');
