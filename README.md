@@ -17,7 +17,7 @@ Responsive static admin dashboard can be integrated to any backend.
 
 ## Live Demo
 
-[Live Demo Link](https://bmuhamood.github.io/bmuhmood.github.io/)
+[Live Demo Link](https://jolly-colden-6cc433.netlify.app)
 
 ## Authors
 
