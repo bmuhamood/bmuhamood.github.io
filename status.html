@@ -73,7 +73,7 @@
     </nav>
     <!-- end of navbar -->
 
-    <section>
+<section>
 <div class="container-fluid">
     <div class="row">
         <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
@@ -83,7 +83,7 @@
                     <div class="card card-common">
                         <div class="card-header">
                         CDR FIles Processing Status
-                        <p><strong>Brief Description<strong</p>
+                        <p><strong>Brief Description<strong></strong></p>
                         </div>
                     <p>
                         <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#details" aria-expanded="false" aria-controls="collapseExample">
@@ -148,96 +148,26 @@
                 </table>
             </div>
 </div>
-
             </div>
             <!-- NRT processing Details -->
-                    <div class="card card-common">
-                        <div class="card-header">
-                        NRT FIles Processing Status
-                        <p><strong>Brief Description<strong</p>
-                        </div>
-                    <p>
-                        <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#details1" aria-expanded="false" aria-controls="collapseExample">
-                            Click to View NRT files processing Details
-                        </button>
-                    </p>
-<div class="collapse" id="details1">
-            <div class="card-body">
-                <table class="table table-striped bg-light text-center col-xl-12">
-                  <thead>
-                    <tr class="text-muted">
-                      <th>CDR Filename</th>
-                      <th>CDRIN</th>
-                      <th>CPF</th>
-                      <th>CSV2NRTRDE</th>
-                      <th>/nrtprc1/nrtIn</th>
-                      <th>Node</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th>CDR001</th>
-                      <td><i class="fas fa-check text-success"></i></td>
-                      <td><i class="fas fa-check text-success"></i></td>
-                        <td><i class="fas fa-times text-danger"></i></td>
-                       <td><i class="fas fa-times text-danger"></i></td>
-                      <td><span class="badge badge-danger w-75 py-2">NODE 1</span></td>
-                    </tr>
-                    <tr>
-                      <th>CDR001</th>
-                      <td><i class="fas fa-check text-success"></i></td>
-                      <td><i class="fas fa-check text-success"></i></td>
-                      <td><i class="fas fa-check text-success"></i></td>
-                      <td><i class="fas fa-times text-danger"></i></td>
-                      <td><span class="badge badge-danger w-75 py-2">NODE 1</span></td>
-                    </tr>
-                    <tr>
-                      <th>CDR001</th>
-                      <td><i class="fas fa-check text-success"></i></td>
-                      <td><i class="fas fa-check text-success"></i></td>
-                       <td><i class="fas fa-check text-success"></i></td>
-                      <td><i class="fas fa-check text-success"></i></td>
-                      <td><span class="badge badge-success w-75 py-2">NODE 2</span></td>
-                    </tr>
-                    <tr>
-                      <th>CDR001</th>
-                       <td><i class="fas fa-times text-danger"></i></td>
-                      <td><i class="fas fa-times text-danger"></i></td>
-                      <td><i class="fas fa-times text-danger"></i></td>
-                      <td><i class="fas fa-times text-danger"></i></td>
-                      <td><span class="badge badge-success w-75 py-2">NODE 2</span></td>
-                    </tr>
-                    <tr>
-                      <th>CDR001</th>
-                      <td><i class="fas fa-check text-success"></i></td>
-                      <td><i class="fas fa-check text-success"></i></td>
-                      <td><i class="fas fa-check text-success"></i></td>
-                       <td><i class="fas fa-check text-success"></i></td>
-                      <td><span class="badge badge-danger w-75 py-2">NODE 1</span></td>
-                    </tr>
-                  </tbody>
-                </table>
-            </div>
-</div>
 
-            </div>
 <!-- Validation Status -->
-                                <div class="card card-common">
-                        <div class="card-header">
+<div class="card card-common">
+                    <div class="card-header">
                         NRT files Validation Status
-                        <p><strong>Brief Description<strong</p>
-                        </div>
+                    <p><strong>Brief Description<strong</p>
+                    </div>
                     <p>
-                        <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#details2" aria-expanded="false" aria-controls="collapseExample">
-                            Click to View NRT files Validation Details
-                        </button>
+                <button class="btn btn-info" type="button" data-toggle="collapse" data-target="#details2" aria-expanded="false" aria-controls="collapseExample">
+                    Click to View NRT files Validation Details
+                </button>
                     </p>
 <div class="collapse" id="details2">
             <div class="card-body">
                 <table class="table table-striped bg-light text-center col-xl-12">
                   <thead>
                     <tr class="text-muted">
-                      <th></th>
+                      <th>Click + to Expand</th>
                       <th>DMZ Receieve</th>
                       <th>NRT Filename</th>
                       <th>NRIN + Node</th>
@@ -248,97 +178,201 @@
                   </thead>
                   <tbody>
                     <tr>
-                        <th><button type="button"><i class="fas fa-plus-square"></i></button></th>
+                        <th><div class="bs-example">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <p class="mb-0">
+                                        <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"><i class="fa fa-plus"></i></button>									
+                                    </p>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                            <table class="table table-striped bg-light text-center col-xl-12">
+                                <thead>
+                                    <tr class="text-muted">
+                                    <th>Threshold Check</th>
+                                    <th>Q Status</th>
+                                    <th>Logs Generated</th>
+                                    <th>Moved to Bck</th>
+                                    <th>Rejected</th>
+                                    <th>NROut</th>
+                                    <th>DMZ Txfr</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td>nrt_clnt_files1</td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-times text-danger"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                                </div>
+                            </div>
+                        </div>
+                    </button>
+                </th>
+                      <th><i class="fas fa-check text-success"></i></th>
+                      <td>NR*****************</td>
+                      <td><span class="badge badge-danger w-75 py-2">NODE 1</span></td>
+                        <td><i class="fas fa-times text-danger"></i></td>
+                       <td><i class="fas fa-check text-success"></i></td>
+                      <td><i class="fas fa-times text-danger"></i></td>
+                    </tr>
+                    <tr>
+                        <th><div class="bs-example">
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapse1"><i class="fa fa-plus"></i></button>									
+                </h2>
+            </div>
+            <div id="collapse1" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                            <table class="table table-striped bg-light text-center col-xl-12">
+                                <thead>
+                                    <tr class="text-muted">
+                                    <th>Threshold Check</th>
+                                    <th>Q Status</th>
+                                    <th>Logs Generated</th>
+                                    <th>Moved to Bck</th>
+                                    <th>Rejected</th>
+                                    <th>NROut</th>
+                                    <th>DMZ Txfr</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td>nrt_dch_files1</td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-times text-danger"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                </div>
+            </div>
+        </div>
+    </button></th>
                       <th><i class="fas fa-check text-success"></i></th>
                       <td>NR*****************</td>
                       <td><span class="badge badge-danger w-75 py-2">NODE 1</span></td>
                         <td><i class="fas fa-check text-success"></i></td>
-                       <td><i class="fas fa-check text-success"></i></td>
-                      <td><i class="fas fa-check text-success"></i></td>
+                       <td><i class="fas fa-times text-danger"></i></td>
+                      <td><i class="fas fa-times text-danger"></i></td>
                     </tr>
                     <tr>
-                        <th><button type="button"><i class="fas fa-plus-square"></i></button></th>
-                      <th><i class="fas fa-check text-success"></i></th>
-                      <td>NR*****************</td>
-                      <td><span class="badge badge-danger w-75 py-2">NODE 1</span></td>
-                        <td><i class="fas fa-check text-success"></i></td>
-                       <td><i class="fas fa-check text-success"></i></td>
-                      <td><i class="fas fa-check text-success"></i></td>
-                    </tr>
-                    <tr>
-                        <th><button type="button"><i class="fas fa-plus-square"></i></button></th>
+                        <th><div class="bs-example">
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapse2"><i class="fa fa-plus"></i></button>									
+                </h2>
+            </div>
+            <div id="collapse2" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                            <table class="table table-striped bg-light text-center col-xl-12">
+                                <thead>
+                                    <tr class="text-muted">
+                                    <th>Threshold Check</th>
+                                    <th>Q Status</th>
+                                    <th>Logs Generated</th>
+                                    <th>Moved to Bck</th>
+                                    <th>Rejected</th>
+                                    <th>NROut</th>
+                                    <th>DMZ Txfr</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td>nrt_cdr_files1</td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-times text-danger"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                </div>
+            </div>
+        </div>
+    </button></th>
                       <th><i class="fas fa-check text-success"></i></th>
                       <td>NR*****************</td>
                       <td><span class="badge badge-success w-75 py-2">NODE 2</span></td>
                         <td><i class="fas fa-check text-success"></i></td>
-                       <td><i class="fas fa-check text-success"></i></td>
-                      <td><i class="fas fa-check text-success"></i></td>
+                       <td><i class="fas fa-times text-danger"></i></td>
+                      <td><i class="fas fa-times text-danger"></i></td>
                     </tr>
                     <tr>
-                        <th><button type="button"><i class="fas fa-plus-square"></i></button></th>
+                        <th><div class="bs-example">
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h2 class="mb-0">
+                    <button type="button" class="btn btn-link" data-toggle="collapse" data-target="#collapse3"><i class="fa fa-plus"></i></button>									
+                </h2>
+            </div>
+            <div id="collapse3" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                            <table class="table table-striped bg-light text-center col-xl-12">
+                                <thead>
+                                    <tr class="text-muted">
+                                    <th>Threshold Check</th>
+                                    <th>Q Status</th>
+                                    <th>Logs Generated</th>
+                                    <th>Moved to Bck</th>
+                                    <th>Rejected</th>
+                                    <th>NROut</th>
+                                    <th>DMZ Txfr</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td>nrt_clnt_files2</td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-times text-danger"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                </div>
+            </div>
+        </div>
+    </button></th>
                       <th><i class="fas fa-check text-success"></i></th>
                       <td>NR*****************</td>
                       <td><span class="badge badge-danger w-75 py-2">NODE 1</span></td>
-                        <td><i class="fas fa-check text-success"></i></td>
-                       <td><i class="fas fa-check text-success"></i></td>
+                        <td><i class="fas fa-times text-danger"></i></td>
+                       <td><i class="fas fa-times text-danger"></i></td>
                       <td><i class="fas fa-check text-success"></i></td>
                     </tr>
-                    <tr>
-                        <th><button type="button"><i class="fas fa-plus-square"></i></button></th>
-                      <th><i class="fas fa-check text-success"></i></th>
-                      <td>NR*****************</td>
-                      <td><span class="badge badge-success w-75 py-2">NODE 2</span></td>
-                        <td><i class="fas fa-check text-success"></i></td>
-                       <td><i class="fas fa-check text-success"></i></td>
-                      <td><i class="fas fa-check text-success"></i></td>
-                    </tr>
-                  </tbody>
-                </table>
             </div>
 </div>
-
             </div>
           </div>
         </div>
       </div>
       </div>
-      
 </div>
     </section>
 
-    <!-- footer -->
-    <footer>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-xl-10 col-lg-9 col-md-8 ml-auto">
-            <div class="row border-top pt-3 bg-dark">
-              <div class="col-lg-6 text-center">
-                <ul class="list-inline">
-                  <li class="list-inline-item mr-2">
-                    <a href="https://github.com/bmuhamood" class="text-light">Github</a>
-                  </li>
-                  <li class="list-inline-item mr-2">
-                    <a href="https://www.linkedin.com/in/bbosa-muhamood-06845576/" class="text-light">Linkedin</a>
-                  </li>
-                  <li class="list-inline-item mr-2">
-                    <a href="https://twitter.com/croixtechfirm" class="text-light">Twitter</a>
-                  </li>
-                  <li class="list-inline-item mr-2">
-                    <a href="#" class="text-light">bbosa2009@gmail.com</a>
-                  </li>
-                  <li class="list-inline-item mr-2">
-                    <a href="#" class="text-light">Mobile/Watsapp: +971543790184</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-6 text-center text-light">
-                <p>&copy; 2021 Copyright. Made With <i class="fas fa-heart text-danger"></i> by <span class="text-success">Bbosa Muhamood</span> </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+ 
     <!-- end footer -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
